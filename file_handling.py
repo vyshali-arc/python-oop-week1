@@ -1,0 +1,10 @@
+file = open("student_data.txt", "a")
+name = input("Enter name: ")
+marks = input("Enter marks: ")
+file.write("Name: " + name + ", Marks: " + marks + "\n")
+file.close()
+
+file = open("student_data.txt", "r")
+print("\nStudent Data:")
+print(file.read())
+file.close()
